@@ -58,3 +58,27 @@ npm run build
 
 - Los archivos optimizados se generarán en la carpeta `dist/`.
 - Esta build puede ser desplegada en cualquier servidor estático.
+
+## Pruebas unitarias con Vitest
+
+Esta aplicación utiliza [Vitest](https://vitest.dev/) y [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) para pruebas unitarias.
+
+### Ejecutar pruebas en consola
+
+Para correr todos los tests en modo consola:
+
+```bash
+npm run test
+```
+
+### Ejecutar pruebas con interfaz gráfica (Vitest UI)
+
+Para abrir la interfaz visual de Vitest UI y gestionar los tests de forma interactiva:
+
+```bash
+npm run test:ui
+```
+
+Esto abrirá una ventana en tu navegador donde podrás ver, ejecutar y depurar los tests fácilmente.
+
+> **Nota:** Ambos comandos están configurados para usar el entorno `jsdom`, necesario para testear componentes React que interactúan con el DOM.
